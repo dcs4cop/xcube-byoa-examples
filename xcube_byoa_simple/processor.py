@@ -2,9 +2,8 @@ from typing import Any, Dict
 
 import numpy as np
 import xarray as xr
-from xcube.core.compute import compute_dataset
 
-from .impl.algorithm import compute_chunk
+from xcube.core.compute import compute_dataset
 
 
 def process_dataset(dataset: xr.Dataset,
