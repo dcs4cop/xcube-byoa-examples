@@ -1,4 +1,6 @@
-## BYOA Examples for Sentinel-2
+## Maximum Chlorophyll Index (MCI) from Sentinel-2 L2A
+
+TODO - describe algorithm
 
 
 
