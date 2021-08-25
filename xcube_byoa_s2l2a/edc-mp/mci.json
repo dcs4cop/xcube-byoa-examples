@@ -1,1 +1,72 @@
 
+{
+  "name": "mci",
+  "version": "",
+  "link": "https://collections.eurodatacube.com/mci/",
+  "inputs": [
+    {
+      "name": "Area of Interest",
+      "id": "aoi",
+      "type": "bbox",
+      "description": "",
+      "optional": false
+    },
+    {
+      "name": "Spatial Resolution",
+      "id":"spatial_res",
+      "type":"float",
+      "description": "Spatial Resolution",
+      "optional": false
+    },
+    {
+      "name": "Time range",
+      "id": "time_range",
+      "type": "daterange",
+      "optional": false,
+      "description": ""
+    },
+    {
+      "name": "Output Name",
+      "id": "output_name",
+      "type": "string",
+      "description": "The name of the output",
+      "optional": true
+    },
+    {
+      "name": "Bucket Name",
+      "id": "bucket_name",
+      "type": "string",
+      "description": "Name of a S3 bucket",
+      "optional": true,
+    },
+    {
+      "name": "The Region of a Bucket",
+      "id": "region",
+      "type": "string",
+      "description": "Name of a S3 bucket if necessary",
+      "optional": true,
+    },
+    {
+      "name": "Endpoint URL for a Bucket",
+      "id": "endpoint_url",
+      "type": "string",
+      "description": "Endpoint URL for a Bucket",
+      "optional": true,
+    },
+    {
+      "name": "Bucket key",
+      "id": "key",
+      "type": "string",
+      "description": "Key for the bucket",
+      "optional": true
+    },
+    {
+      "name": "Bucket secret",
+      "id": "secret",
+      "type": "string",
+      "description": "Secret for the bucket",
+      "optional": true
+    }
+  ]
+}
+
