@@ -6,7 +6,7 @@
   "inputs": [
     {
       "name": "Area of Interest",
-      "id": "aoi",
+      "id": "bbox",
       "type": "bbox",
       "description": "",
       "optional": false
