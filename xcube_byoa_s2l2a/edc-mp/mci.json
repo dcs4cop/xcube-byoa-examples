@@ -30,28 +30,28 @@
       "id": "output_name",
       "type": "string",
       "optional": false,
-      "description": "A unique name for the output so it can later be identified, should include a slash-separated prefix, e.g. 'john_doe/S2L2A_SUBSET_1.zarr'",
+      "description": "A unique name for the output so it can later be identified, should include a slash-separated prefix, e.g. 'john_doe/S2L2A_SUBSET_1.zarr'"
     },
     {
       "name": "Output S3 endpoint URL",
       "id": "endpoint_url",
       "type": "string",
       "description": "Endpoint URL of a S3-compatible object storage. Leave empty for default target in AWS S3.",
-      "optional": true,
+      "optional": true
     },
     {
       "name": "Output S3 bucket",
       "id": "bucket_name",
       "type": "string",
       "description": "Name of a bucket in S3-compatible object storage. Leave empty for default target in AWS S3.",
-      "optional": true,
+      "optional": true
     },
     {
       "name": "Output S3 region",
       "id": "region_name",
       "type": "string",
       "description": "Region identifier for S3-compatible object storage, e.g. 'eu-central-1'. Leave empty for default target in AWS S3.",
-      "optional": true,
+      "optional": true
     },
     {
       "name": "Output S3 access key identifier",
