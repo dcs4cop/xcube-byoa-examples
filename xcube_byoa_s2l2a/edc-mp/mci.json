@@ -1,72 +1,63 @@
-
 {
-  "name": "Maximum Chlorophyll Index (MCI) for Sentinel-2 L2A",
-  "version": "0.1",
-  "link": "https://github.com/dcs4cop/xcube-byoa-examples/blob/main/xcube_byoa_s2l2a/xcube_byoa_s2l2a/mci.md",
+  "link": "https://collections.eurodatacube.com/xcube-gen-s2-mci/",
+  "version": "a9e2d59b927b17903ee6aee6546ab0557eaf1668",
   "inputs": [
     {
-      "name": "Area of interest",
       "id": "bbox",
+      "name": "Area of Interest",
+      "optional": false,
       "type": "bbox",
-      "description": "The area of interest in geographic coordinates using decimal degree units",
-      "optional": false
+      "description": "The BBOX you are interested in."
     },
     {
-      "name": "Spatial resolution",
-      "id":"spatial_res",
-      "type":"float",
-      "description": "Size of a pixel in decimal degrees",
-      "optional": false
-    },
-    {
-      "name": "Time range",
       "id": "time_range",
+      "name": "Time range",
+      "optional": false,
       "type": "daterange",
-      "optional": false,
-      "description": "Start date and end date"
+      "description": "The time range you are interested in."
     },
     {
-      "name": "Output name",
       "id": "output_name",
+      "name": "Output Name",
+      "optional": true,
       "type": "string",
-      "optional": false,
-      "description": "A unique name for the output so it can later be identified, should include a slash-separated prefix, e.g. 'john_doe/S2L2A_SUBSET_1.zarr'"
+      "description": "The name of a zarr output (e.g. mycube.zarr)."
     },
     {
-      "name": "Output S3 endpoint URL",
-      "id": "endpoint_url",
-      "type": "string",
-      "description": "Endpoint URL of a S3-compatible object storage. Leave empty for default target in AWS S3.",
-      "optional": true
-    },
-    {
-      "name": "Output S3 bucket",
       "id": "bucket_name",
+      "name": "Bucket Name",
+      "optional": true,
       "type": "string",
-      "description": "Name of a bucket in S3-compatible object storage. Leave empty for default target in AWS S3.",
-      "optional": true
+      "description": "Optional: Name of your own S3 bucket. If Bucket Name and below bucket specifictations are not given, eurodatacube-scratch bucket is used as default."
     },
     {
-      "name": "Output S3 region",
-      "id": "region_name",
+      "id": "region",
+      "name": "The Region of a Bucket",
+      "optional": true,
       "type": "string",
-      "description": "Region identifier for S3-compatible object storage, e.g. 'eu-central-1'. Leave empty for default target in AWS S3.",
-      "optional": true
+      "description": "Optional: Name of the S3 region of your own bucket."
     },
     {
-      "name": "Output S3 access key identifier",
+      "id": "endpoint_url",
+      "name": "Endpoint URL for a Bucket",
+      "optional": true,
+      "type": "string",
+      "description": "Optional: Endpoint URL for your own bucket."
+    },
+    {
       "id": "key",
+      "name": "Bucket key",
+      "optional": true,
       "type": "string",
-      "description": "Your access key identifier. Leave empty for publicly writable buckets and for default target in AWS S3.",
-      "optional": true
+      "description": "Optional: Key for your own bucket."
     },
     {
-      "name": "Output S3 secret access key",
       "id": "secret",
+      "name": "Bucket secret",
+      "optional": true,
       "type": "string",
-      "description": "Your secret access key. Leave empty for publicly writable buckets and for default target in AWS S3.",
-      "optional": true
+      "description": "Optional: Secret for your own bucket."
     }
-  ]
+  ],
+  "name": "xcube-gen-s2-mci"
 }
-
