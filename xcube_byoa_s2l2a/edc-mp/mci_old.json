@@ -1,0 +1,72 @@
+
+{
+  "name": "Maximum Chlorophyll Index (MCI) for Sentinel-2 L2A",
+  "version": "0.1",
+  "link": "https://github.com/dcs4cop/xcube-byoa-examples/blob/main/xcube_byoa_s2l2a/xcube_byoa_s2l2a/mci.md",
+  "inputs": [
+    {
+      "name": "Area of interest",
+      "id": "bbox",
+      "type": "bbox",
+      "description": "The area of interest in geographic coordinates using decimal degree units",
+      "optional": false
+    },
+    {
+      "name": "Spatial resolution",
+      "id":"spatial_res",
+      "type":"float",
+      "description": "Size of a pixel in decimal degrees",
+      "optional": false
+    },
+    {
+      "name": "Time range",
+      "id": "time_range",
+      "type": "daterange",
+      "optional": false,
+      "description": "Start date and end date"
+    },
+    {
+      "name": "Output name",
+      "id": "output_name",
+      "type": "string",
+      "optional": false,
+      "description": "A unique name for the output so it can later be identified, should include a slash-separated prefix, e.g. 'john_doe/S2L2A_SUBSET_1.zarr'"
+    },
+    {
+      "name": "Output S3 endpoint URL",
+      "id": "endpoint_url",
+      "type": "string",
+      "description": "Endpoint URL of a S3-compatible object storage. Leave empty for default target in AWS S3.",
+      "optional": true
+    },
+    {
+      "name": "Output S3 bucket",
+      "id": "bucket_name",
+      "type": "string",
+      "description": "Name of a bucket in S3-compatible object storage. Leave empty for default target in AWS S3.",
+      "optional": true
+    },
+    {
+      "name": "Output S3 region",
+      "id": "region_name",
+      "type": "string",
+      "description": "Region identifier for S3-compatible object storage, e.g. 'eu-central-1'. Leave empty for default target in AWS S3.",
+      "optional": true
+    },
+    {
+      "name": "Output S3 access key identifier",
+      "id": "key",
+      "type": "string",
+      "description": "Your access key identifier. Leave empty for publicly writable buckets and for default target in AWS S3.",
+      "optional": true
+    },
+    {
+      "name": "Output S3 secret access key",
+      "id": "secret",
+      "type": "string",
+      "description": "Your secret access key. Leave empty for publicly writable buckets and for default target in AWS S3.",
+      "optional": true
+    }
+  ]
+}
+
